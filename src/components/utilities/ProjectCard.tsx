@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, coverLocation, imagesLo
         if (isMouseInside) {
             animationLoop = setInterval(() => {
                 setCurrentAnimationIndex(prev => (prev + 1) % imagesLocation.length)
-            }, 1000)
+            }, 800)
         } else if (!isMouseInside && animationLoop) {
             clearInterval(animationLoop);
         }

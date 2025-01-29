@@ -1,11 +1,13 @@
-// Page Imports
-import Home from "./pages/Home"
+// Imports
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./components/utilities/AnimateRoute";
+
 
 function App() {
   return (
-    <>
-      <Home/>
-    </>
+    <BrowserRouter>
+      <AnimatedRoutes />
+    </BrowserRouter>
   )
 }
 
