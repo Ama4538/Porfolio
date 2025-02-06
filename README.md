@@ -13,12 +13,12 @@ This repository showcases my projects and skills as a web developer
 - [License](#license)
 
 ## Access
-Accessible from 
+Accessible from https://porfolio-kevin-lys-projects.vercel.app
 
 ## Installation
 1. **Clone the repository:**
     ```bash
-    git clone 
+    git clone https://github.com/Ama4538/Porfolio.git
     cd Portfolio
     ```
 2. **Install dependencies:**
@@ -35,8 +35,8 @@ Open your browser and go to localhost
 
 ## Tools
 - React
-- JS
-- CSS
+- Typescript
+- Tailwind CSS
 - Figma
 
 ## Project Structure
