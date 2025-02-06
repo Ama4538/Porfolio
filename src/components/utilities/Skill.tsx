@@ -1,16 +1,16 @@
 // Icons
-import JavascriptIcon from "../icons/Skills/JavascriptIcon"
-import TypescriptIcon from "../icons/Skills/TypescriptIcon";
-import JavaIcon from "../icons/Skills/JavaIcon";
-import CIcon from "../icons/Skills/CIcon"
-import HTMLIcon from "../icons/Skills/HTMLIcon";
-import CSSIcon from "../icons/Skills/CSSIcon";
-import ReactIcon from "../icons/Skills/ReactIcon";
-import NodeIcon from "../icons/Skills/NodeIcon";
-import ExpressIcon from "../icons/Skills/ExpressIcon";
-import TailwindCSSIcon from "../icons/Skills/TailwindCSSIcon";
-import PostgreSQLIcon from "../icons/Skills/PostgreSQLIcon";
-import SQLIcon from "../icons/Skills/SQLIcon";
+import JavascriptIcon from "../svg/icons/Skills/JavascriptIcon"
+import TypescriptIcon from "../svg/icons/Skills/TypescriptIcon";
+import JavaIcon from "../svg/icons/Skills/JavaIcon";
+import CIcon from "../svg/icons/Skills/CIcon"
+import HTMLIcon from "../svg/icons/Skills/HTMLIcon";
+import CSSIcon from "../svg/icons/Skills/CSSIcon";
+import ReactIcon from "../svg/icons/Skills/ReactIcon";
+import NodeIcon from "../svg/icons/Skills/NodeIcon";
+import ExpressIcon from "../svg/icons/Skills/ExpressIcon";
+import TailwindCSSIcon from "../svg/icons/Skills/TailwindCSSIcon";
+import PostgreSQLIcon from "../svg/icons/Skills/PostgreSQLIcon";
+import FigmaIcon from "../svg/icons/Skills/FigmaIcon";
 
 // Interface
 interface SkillsProps {
@@ -30,14 +30,15 @@ const iconMap: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
     Express: ExpressIcon,
     TailwindCSS: TailwindCSSIcon,
     PostgreSQL: PostgreSQLIcon,
-    SQL: SQLIcon,
+    Figma: FigmaIcon,
 };
 
 const Skill: React.FC<SkillsProps> = ({ skill }) => {
+    // Getting icon
     const IconComponent = iconMap[skill.replace(" ", "")];
 
     return (
-        <div className="flex flex-col items-center w-28 gap-2">
+        <div className="flex flex-col items-center w-full md:w-24 lg:w-28 xl:w-24 2xl:w-28 gap-2 text-xs md:text-base">
             <div className="aspect-square h-20">
                 {IconComponent ? <IconComponent height='100%' width='100%' /> : <></>}
             </div>

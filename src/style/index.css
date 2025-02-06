@@ -17,6 +17,6 @@
 /* Style */
 html {
     background-color: var(--color-black);
-    margin-right: calc(-1 * (100vw - 100%));
+    margin-right: calc(-1 * (100dvw - 100%));
     overflow-x: hidden;
 }

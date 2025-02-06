@@ -1,0 +1,91 @@
+{
+    "projects": [
+        {
+            "id": "petal-vogue",
+            "name": "Petal Vogue",
+            "projectType": "Commerce",
+            "coverImageLocation": "main.jpg",
+            "additionalImageLocation": [
+                "cart.png",
+                "edit.png",
+                "product.png",
+                "recommendation.png",
+                "search.png",
+                "wishlist.png"
+            ],
+            "overview": "A fast fashion e-commerce platform where each product has a unique page with specific coloring and sizing. Key features include sorting system, search functionality, wishlist management, and a user-friendly cart system. Product details can be edited directly from the wishlist or cart. The platform also features a recommendation system that suggests products based on user preferences. It is fully responsive and maintains data between refreshes using local storage.",
+            "tools": [
+                "React.js",
+                "CSS",
+                "Framer Motion",
+                "React-Router-DOM"
+            ],
+            "links": [
+                {
+                    "label": "Live",
+                    "address": "https://petal-vogue.vercel.app"
+                },
+                {
+                    "label": "Code",
+                    "address": "https://github.com/Ama4538/Petal-Vogue"
+                }
+            ],
+            "styleGuideLocation": null
+        },
+        {
+            "id": "quadsaic",
+            "name": "Quadsaic",
+            "projectType": "Game",
+            "coverImageLocation": "main.png",
+            "additionalImageLocation": [
+                "home.png",
+                "settings.png",
+                "tutorial.png",
+                "wordle.png",
+                "word-search.png"
+            ],
+            "overview": "A game hub featuring two popular games: Wordle and Word Search. Each game is enhanced with customizations feature to provide a fresh and engaging experience without straying to far from the original game play.",
+            "tools": [
+                "React.js",
+                "CSS",
+                "Framer Motion",
+                "React-Router-DOM"
+            ],
+            "links": [
+                {
+                    "label": "Live",
+                    "address": "https://quadsaic.vercel.app"
+                },
+                {
+                    "label": "Code",
+                    "address": "https://github.com/Ama4538/Quadsaic"
+                }
+            ],
+            "styleGuideLocation": null
+        },
+        {
+            "id": "weather-app",
+            "name": "Weather App",
+            "projectType": "Weather",
+            "coverImageLocation": "main.png",
+            "additionalImageLocation": [],
+            "overview": "A weather app providing a 24-hour and 3-day forecast using a free weather API. Key features include current weather conditions, zipcode search functionality, and real-time updates. The app offers a user-friendly interface with detailed weather information, ensuring users stay informed about upcoming weather changes.",
+            "tools": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "links": [
+                {
+                    "label": "Live",
+                    "address": "https://ama4538.github.io/Weather-App/"
+                },
+                {
+                    "label": "Code",
+                    "address": "https://github.com/Ama4538/Weather-App"
+                }
+            ],
+            "styleGuideLocation": null
+        }
+    ]
+}
