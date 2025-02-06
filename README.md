@@ -1,6 +1,6 @@
 ![Default Screenshot](images/main.png)
 
-# PortfolioV3
+# Portfolio
 This repository showcases my projects and skills as a web developer
 
 ## Table of Contents
