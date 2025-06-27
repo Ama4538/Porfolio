@@ -2,6 +2,12 @@
     "statement": "I'm a Computer Science student at George Mason University with a passion for web development. I enjoy creating websites that are both functional and user-friendly. My approach to coding and web development is a human-first approach, where the end user's satisfaction matters the most. Through my coursework, I've developed a strong foundation in data structures, object-oriented programming, and software engineering. Outside the classroom, I'm always eager to explore new technologies and frameworks, applying what I learn to personal projects to help reinforce my understanding. When I'm not coding, you can find me at the gym, walking a trail, or playing video games. I believe that a curious and collaborative mindset is key to building meaningful solutions, and I'm excited to continue growing as a developer while creating tools that make a difference.",
     "experience": [
         {
+            "title": "Summer Software Engineer Intern",
+            "company": "Federal Reserve Board",
+            "startData": "May 2025",
+            "endData": "Present"
+        },
+        {
             "title": "Retail Cashier",
             "company": "Boba Hero LV UP",
             "startData": "Oct 2021",
@@ -32,6 +38,8 @@
         "Express",
         "Tailwind CSS",
         "PostgreSQL",
-        "Figma"
+        "Figma",
+        "Python",
+        "SharePoint"
     ]
 }

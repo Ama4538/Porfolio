@@ -11,6 +11,8 @@ import ExpressIcon from "../svg/icons/Skills/ExpressIcon";
 import TailwindCSSIcon from "../svg/icons/Skills/TailwindCSSIcon";
 import PostgreSQLIcon from "../svg/icons/Skills/PostgreSQLIcon";
 import FigmaIcon from "../svg/icons/Skills/FigmaIcon";
+import PythonIcon from "../svg/icons/Skills/PythonIcon";
+import SharePointIcon from "../svg/icons/Skills/SharePointIcon";
 
 // Interface
 interface SkillsProps {
@@ -31,6 +33,8 @@ const iconMap: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
     TailwindCSS: TailwindCSSIcon,
     PostgreSQL: PostgreSQLIcon,
     Figma: FigmaIcon,
+    Python: PythonIcon,
+    SharePoint: SharePointIcon,
 };
 
 const Skill: React.FC<SkillsProps> = ({ skill }) => {
