@@ -12,7 +12,7 @@ import aboutData from "../data/AboutData.json"
 const About = () => {
     // Open resume
     const openResume = () => {
-        window.open("/Kevin_Ly.pdf", "_blank");
+        window.open("Kevin Ly Resume.pdf", "_blank");
     }
 
     return (
