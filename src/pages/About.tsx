@@ -19,14 +19,14 @@ const About = () => {
         <>
             <Header />
             <main className="px-6 md:px-12 lg:px-16 2xl:px-36 font-body text-white 2xl:text-lg">
-                <section className="flex flex-col gap-10 2xl:gap-24 xl:flex-row">
+                <section className="flex flex-col gap-10 2xl:gap-20 xl:flex-row">
                     <div className="w-full aspect-square md:aspect-[1.5/1] flex xl:aspect-auto xl:w-[50%]">
-                        <div className="h-full w-full bg-[url('/picture_of_myself.jpg')] bg-cover bg-center bg-no-repeat rounded-md lg:rounded-lg"></div>
+                        <div className="h-full w-full bg-[url('/picture_of_myself.jpg')] bg-cover bg-center bg-no-repeat rounded-sm"></div>
                     </div>
                     <article className="flex flex-col gap-10 xl:gap-8 2xl:gap-10 xl:w-[50%]">
                         <div>
                             <h3 className="font-subtitle text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 xl:mb-2 2xl:mb-4">About Me</h3>
-                            <p>{aboutData.statement}</p>
+                            <p className="whitespace-pre-line">{aboutData.statement}</p>
                         </div>
                         <div>
                             <h3 className="font-subtitle text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 xl:mb-2 2xl:mb-4">Experience</h3>

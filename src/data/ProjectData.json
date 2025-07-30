@@ -1,6 +1,68 @@
 {
     "projects": [
         {
+            "id": "component-library",
+            "name": "Component Library",
+            "projectType": "Internship",
+            "coverImageLocation": "main.png",
+            "additionalImageLocation": [
+                "Userflow.png",
+                "Home.png",
+                "About.png",
+                "Category.png",
+                "Component.png",
+                "Admin.png"
+            ],
+            "overview": "Designed and developed a SharePoint Online component library site to house custom components, integrating a custom SharePoint based asset matrix to connect backend data schemas. Note: Only design artifacts (wireframes, style guides, and userflow) are available for public sharing.",
+            "tools": [
+                "HTML",
+                "JavaScript",
+                "CSS",
+                "Figma"
+            ],
+            "links": [],
+            "styleGuideLocation": "Style Guide.png",
+            "imageTypeLong": true
+        },
+        {
+            "id": "component-based-ui-system",
+            "name": "Component Based UI System",
+            "projectType": "Internship",
+            "coverImageLocation": "Component Cover.png",
+            "additionalImageLocation": [
+                "Profile Page Low Fidelity.png",
+                "Profile Page High Fidelity.png",
+                "Collections Component Low Fidelity.png",
+                "Collections Component High Fidelity.png",
+                "Upcoming Component Low Fidelity.png",
+                "Upcoming Component High Fidelity.png",
+                "News Component Low Fidelity.png",
+                "News Component High Fidelity.png",
+                "Research Paper Component Low Fidelity.png",
+                "Research Paper Component High Fidelity.png",
+                "FAQ Component Iteration 1.png",
+                "FAQ Component.png",
+                "Support Team Component Iteration 1.png",
+                "Support Team Component.png",
+                "Events Component Iteration 1.png",
+                "Events Component.png",
+                "Admin Portal Component Iteration 1.png",
+                "Admin Portal Component.png",
+                "Author Component Iteration 1.png",
+                "Author Component.png"
+            ],
+            "overview": "Created a comprehensive set of reusable UI components for diverse use cases, owning the process end to end from design through development. These components powered a dynamic, data-driven SharePoint site used by federal developers and designers. Note: Only design artifacts (wireframes, style guides) are available for public sharing.",
+            "tools": [
+                "HTML",
+                "JavaScript",
+                "CSS",
+                "Figma"
+            ],
+            "links": [],
+            "styleGuideLocation": "Component Style Guide.png",
+            "imageTypeLong": false
+        },
+        {
             "id": "petal-vogue",
             "name": "Petal Vogue",
             "projectType": "Commerce",
@@ -30,7 +92,8 @@
                     "address": "https://github.com/Ama4538/Petal-Vogue"
                 }
             ],
-            "styleGuideLocation": null
+            "styleGuideLocation": null,
+            "imageTypeLong": false
         },
         {
             "id": "quadsaic",
@@ -61,7 +124,8 @@
                     "address": "https://github.com/Ama4538/Quadsaic"
                 }
             ],
-            "styleGuideLocation": null
+            "styleGuideLocation": null,
+            "imageTypeLong": false
         },
         {
             "id": "weather-app",
@@ -85,7 +149,8 @@
                     "address": "https://github.com/Ama4538/Weather-App"
                 }
             ],
-            "styleGuideLocation": null
+            "styleGuideLocation": null,
+            "imageTypeLong": false
         }
     ]
 }

@@ -13,8 +13,9 @@ import { projects } from "../data/ProjectData.json"
 
 const Project = () => {
     // Getting project
-    const { projectName } = useParams();
-    const currentProject = projects.find((project) => project.id == projectName);
+    const { projectName } = useParams<{ projectName?: string }>();
+    const formatProjectName = projectName ? projectName.replaceAll(" ", "-") : undefined;
+    const currentProject = projects.find((project) => project.id == formatProjectName);
 
     return (
         <>
@@ -38,36 +39,38 @@ const Project = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div>
-                                <h4 className="font-subtitle text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 lg:mb-4 xl:mb-2 2xl:mb-4">Links</h4>
-                                <div className={`grid gap-2 md:gap-4 md:w-[80%] lg:w-[70%] xl:w-full ${currentProject?.links && currentProject?.links.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
-                                    {currentProject?.links.map(link => (
-                                        <a
-                                            className="flex justify-center text-lg md:text-xl 2xl:text-xl xl:text-lg py-1 md:py-1.5 xl:py-1 2xl:py-1.5 bg-white font-subtitle text-black rounded-md cursor-pointer duration-[0.30s] transition-all ease-in-out hover:translate-y-[-5%] hover:bg-acent hover:text-white"
-                                            key={`Project_Link_${link.label}`}
-                                            href={link.address}
-                                            target="_blank"
-                                        >
-                                            {`View ${link.label}`}
-                                        </a>
-                                    ))}
+                            {currentProject?.links && currentProject?.links.length > 0 ?
+                                <div>
+                                    <h4 className="font-subtitle text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 lg:mb-4 xl:mb-2 2xl:mb-4">Links</h4>
+                                    <div className={`grid gap-2 md:gap-4 md:w-[80%] lg:w-[70%] xl:w-full ${currentProject?.links && currentProject?.links.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                                        {currentProject?.links.map(link => (
+                                            <a
+                                                className="flex justify-center text-lg md:text-xl 2xl:text-xl xl:text-lg py-1 md:py-1.5 xl:py-1 2xl:py-1.5 bg-white font-subtitle text-black rounded-md cursor-pointer duration-[0.30s] transition-all ease-in-out hover:translate-y-[-5%] hover:bg-acent hover:text-white"
+                                                key={`Project_Link_${link.label}`}
+                                                href={link.address}
+                                                target="_blank"
+                                            >
+                                                {`View ${link.label}`}
+                                            </a>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
+                                : <></>}
                         </div>
                     </section>
                     <section className="flex flex-col gap-10 md:gap-10 mt-4 lg:mt-3 lg:gap-12 xl:gap-10 2xl:gap-16">
                         {currentProject?.styleGuideLocation
                             ? <div className="flex flex-col">
                                 <h4 className="font-subtitle text-center text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 lg:mb-5 2xl:mb-6">Style Guide</h4>
-                                <img className="aspect-video object-center object-cover" src={`/ProjectImages/${currentProject?.id}/${currentProject?.styleGuideLocation}`} alt={`${currentProject.name} Style Guide`} />
+                                <img className="aspect-video object-center object-contain w-full" src={`/ProjectImages/${currentProject?.id}/${currentProject?.styleGuideLocation}`} alt={`${currentProject.name} Style Guide`} />
                             </div>
                             : <></>}
                         {currentProject?.additionalImageLocation.length && currentProject?.additionalImageLocation.length > 0
                             ? <div>
                                 <h4 className="font-subtitle text-center text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 lg:mb-5 2xl:mb-6">Pages</h4>
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-2">
+                                <div className={`grid grid-cols-1 lg:${currentProject.imageTypeLong ? `grid-cols-1 lg:gap-4` : `grid-cols-2 lg:gap-2`} gap-3 `}>
                                     {currentProject?.additionalImageLocation.map(image => (
-                                        <ProjectCard key={`Addition_Project_Image_${image}`} id={currentProject.id} name={image.slice(0, image.indexOf("."))} coverLocation={image} />
+                                        <ProjectCard key={`Addition_Project_Image_${image}`} id={currentProject.id} name={image.slice(0, image.indexOf("."))} coverLocation={image} imageType={currentProject.imageTypeLong ? currentProject.imageTypeLong : false} />
                                     ))}
                                 </div>
                             </div>
