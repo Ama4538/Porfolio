@@ -1,6 +1,28 @@
 {
     "projects": [
         {
+            "id": "tracer",
+            "name": "Tracer",
+            "projectType": "Desktop Automation Tool",
+            "coverImageLocation": "Tracer.png",
+            "additionalImageLocation": [
+                "Tracer Settings.png"
+            ],
+            "overview": "Tracer is a lightweight desktop app that captures your keyboard and mouse actions, allowing you to automate repetitive tasks and save time. Its simple, intuitive interface makes recording and replaying actions quick and easy.",
+            "tools": [
+                "Python",
+                "PySide6",
+                "Pynput"
+            ],
+            "links": [
+                {
+                    "label": "Code",
+                    "address": "https://github.com/Ama4538/Tracer"
+                }],
+            "styleGuideLocation": "Style Guide.png",
+            "imageTypeLong": false
+        },
+        {
             "id": "component-library",
             "name": "Component Library",
             "projectType": "Internship",

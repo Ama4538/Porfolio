@@ -67,7 +67,7 @@ const Project = () => {
                             : <></>}
                         {currentProject?.additionalImageLocation.length && currentProject?.additionalImageLocation.length > 0
                             ? <div>
-                                <h4 className="font-subtitle text-center text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 lg:mb-5 2xl:mb-6">Pages</h4>
+                                <h4 className="font-subtitle text-center text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl mb-3 lg:mb-5 2xl:mb-6">Images</h4>
                                 <div className={`grid grid-cols-1 lg:${currentProject.imageTypeLong ? `grid-cols-1 lg:gap-4` : `grid-cols-2 lg:gap-2`} gap-3 `}>
                                     {currentProject?.additionalImageLocation.map(image => (
                                         <ProjectCard key={`Addition_Project_Image_${image}`} id={currentProject.id} name={image.slice(0, image.indexOf("."))} coverLocation={image} imageType={currentProject.imageTypeLong ? currentProject.imageTypeLong : false} />
